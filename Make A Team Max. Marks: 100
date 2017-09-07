@@ -1,0 +1,97 @@
+Make A Team
+Max. Marks: 100
+You are the head of a new division in company ABC. For the division, you have to make a new team.
+
+Following information is known to you about the company:
+
+Employees are given ids starting from number 1. Every employee has a unique id.
+Every team has some employees working in it. All employees working in a team have consecutive ids, i.e., if first employee in a team has id 1 and last employee had id 5, it means the team has all employees with ids 1,2,3,4,5.
+Employees working in a team are comfortable among each other.
+An employee may be working in multiple teams.
+Any team will have atleast one employee.
+Any employee will be working in atleast one team.
+You have to make a team with employees such that all of them are comfortable with each other. You have to print the number of different teams you can make. The team must contain atleast one employee excluding you. Two teams are considered different if one team has atleast one employee which is not there in another team.
+
+You are given a table which consists of three fields are describe below:
+1. TeamId: Id of the team.
+2. StartEmpId: Id of the first employee of the team.
+3. EndEmpId: Id of the last employee of the team.
+
+The table is ordered as below:
+If team i comes before team j in table, then 
+S
+t
+a
+r
+t
+E
+m
+p
+I
+d
+i
+<
+S
+t
+a
+r
+t
+E
+m
+p
+I
+d
+j
+StartEmpIdi<StartEmpIdj and 
+E
+n
+d
+E
+m
+p
+I
+d
+i
+<
+E
+n
+d
+E
+m
+p
+I
+d
+j
+EndEmpIdi<EndEmpIdj
+Input Format:
+
+Table : Teams
+
+Field	Type
+TeamId	integer
+StartEmpId	integer
+EndEmpId	integer
+Output Format:
+
+Field	Type
+Answer	int
+Sample Input:
+
+Sample Teams Table:
+
+TeamId	StartEmpId	EndEmpId
+1	1	3
+3	2	4
+Sample Output:
+
+Answer
+9
+Explanation:
+
+Employee 1 is comfortable with employees 2,3; 2 is comfortable with 1,3,4; 3 is comfortable with 1,2,4; 4 is comfortable with 2,3. The possible teams are: (1,1),(1,2),(1,3),(2,2),(2,3),(2,4),(3,3),(3,4),(4,4)
+
+Time Limit:	5 sec(s) for each input file.
+Memory Limit:	256 MB
+Source Limit:	1024 KB
+Marking Scheme:	Marks are awarded if any testcase passes.
+Allowed Languages:	MySQL, PostgreSQL, MSSQL, Oracle Database
