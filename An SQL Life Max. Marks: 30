@@ -1,0 +1,68 @@
+
+A Group of students studying at 
+Z
+Z university in Philadelphia are living the complete SQL Life. They eat, sleep and write SQL.
+
+Now, a great fact about them is that each person among the group of students has an SQL Quotient indicating his sharpness at SQL.
+
+Also, the students are divided into friend groups. Each group has their own unique Identifier, indicated by an Upper Case English Alphabet. So, obviously there can be at max 
+26
+26 friendship groups.
+
+Now, these students want to find out the SQL Greatness Average for each group. The SQL greatness average of each group is defined to be the mean of the SQL Quotient of each person present in the group.
+
+You, being a participant of this contest , are expected to find the maximum real number among SQL Greatness average of each distinct friend group.
+
+Input Format:
+
+Table : Students
+
+Field	Type
+SQL_Quotient	float
+Group_ID	Text
+Sample:
+
+SQL_Quotient	Group_ID
+3.35	A
+4.35	B
+5.35	C
+Output:
+
+answer
+5.35
+You will be given the SQL Quotient of each person rounded up to exactly 
+2
+2 decimal places. Also, print your answer rounded up to exactly 
+2
+2 decimal places.
+
+Explanation
+Here, in the sample, there are 
+3
+3 groups having ID's 
+(
+A
+,
+B
+,
+C
+)
+(A,B,C) respectively. The SQl Greatness Average of these groups are 
+3.35
+,
+4.35
+3.35,4.35 and 
+5.35
+5.35 respectively.
+
+The maximum SQL Greatness Average among all these is 
+5.35
+5.35, so we print 
+5.35
+5.35 as the answer.
+
+Time Limit:	5 sec(s) for each input file.
+Memory Limit:	256 MB
+Source Limit:	1024 KB
+Marking Scheme:	Marks are awarded if any testcase passes.
+Allowed Languages:	MySQL, PostgreSQL, MSSQL, Oracle Database
